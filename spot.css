@@ -1,0 +1,176 @@
+body {
+    background-color: antiquewhite;
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+}
+
+nav {
+    background-color: black;
+    color: aliceblue;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    height: 70px;
+    align-items: center;
+    padding: 0 20px;
+    justify-content: space-between;
+}
+
+.logo img {
+    width: 55px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+nav ul li {
+    padding: 0 12px;
+    font-size: 15px;
+}
+
+.container {
+    min-height: 75vh;
+    color: aliceblue;
+    background-color: black;
+    width: 90%;
+    max-width: 1200px;
+    border-radius: 13px;
+    margin: 20px auto;
+    background-image: url('songs/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.songli {
+    margin-top: 50px;
+}
+
+.songitem {
+    height: 50px;
+    display: flex;
+    background-color: white;
+    width: 100%;
+    color: black;
+    margin: 12px 0;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 30px;
+    font-size: 15px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+.songitem:hover {
+    background-color: #f0f0f0;
+}
+
+.songitem img {
+    width: 45px;
+    margin-right: 20px;
+    border-radius: 34px;
+}
+
+.ts {
+    margin-right: 10px;
+    font-size: 17px;
+}
+
+.picon i {
+    margin-right: 5px;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+.bottom {
+    position: sticky;
+    bottom: 0;
+    height: 100px;
+    background-color: black;
+    color: white;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.icons {
+    margin-top: 15px;
+    cursor: pointer;
+    display: flex;
+    gap: 20px;
+}
+
+#pgbar {
+    width: 90%;
+    max-width: 1200px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .songitem {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .songitem img {
+        margin: 0 0 10px 0;
+    }
+
+    .icons {
+        font-size: 30px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    nav ul li {
+        padding: 5px 0;
+        text-align: center;
+    }
+
+    #pgbar {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .songitem {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .picon i {
+        font-size: 24px;
+    }
+
+    .icons {
+        font-size: 24px;
+    }
+
+    .logo {
+        font-size: 18px;
+    }
+
+    .container {
+        padding: 15px;
+    }
+}

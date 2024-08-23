@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+    <link rel="stylesheet" href="spot.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="logo"><img src="spot.png" alt="Spotify Logo">Spotify</li>
+            <li>Home</li>
+            <li>About</li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="songli">
+            <h1>Best of Hits - No Copyright Sounds</h1>
+            <div class="songitcontainer">
+                <div class="songitem">
+                    <img src="songs/cover.jpg" alt="1">
+                    <span class="name">Beliver</span>
+                    <span class="picon"><span class="ts">03:53</span><i class="fa songitemplay fa-play-circle" aria-hidden="true"></i></span>
+                </div>
+                <div class="songitem">
+                    <img src="songs/cover2.png" alt="2">
+                    <span class="name">Teri Baton</span>
+                    <span class="picon"><span class="ts">04:02</span><i class="fa songitemplay fa-play-circle" aria-hidden="true"></i></span>
+                </div>
+                <div class="songitem">
+                    <img src="songs/cover3.png" alt="3">
+                    <span class="name">Mai Agar Kahoon</span>
+                    <span class="picon"><span class="ts">03:45</span><i class="fa songitemplay fa-play-circle" aria-hidden="true"></i></span>
+                </div>
+            </div>
+        </div>
+        <div class="banner"></div>
+    </div>
+
+    <div class="bottom">
+        <input type="range" name="range" id="pgbar" min="0" max="100" value="0">
+        <div class="icons">
+            <i class="fa fa-step-backward" aria-hidden="true" id="backward"></i>
+            <i class="fa fa-play-circle" aria-hidden="true" id="play"></i>
+            <i class="fa fa-step-forward" aria-hidden="true" id="forward"></i>
+        </div>
+    </div>
+    <script src="spot.js"></script>
+</body>
+</html>
